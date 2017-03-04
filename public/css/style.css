@@ -1,0 +1,636 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Raleway:400,500,600,700,800);
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700,900);
+
+/*==========================================*/
+/*       01 - Global Elements
+/*==========================================*/
+body{
+	font-family:Lato,Arial,Helvetica,sans-serif!important;
+	font-size:14px;
+	line-height:20px;
+	margin:0;
+	color:#000;
+	background-color:#fff;
+	-webkit-font-smoothing:antialiased!important;
+}
+
+h1,h2,h3,h4,h5,h6{
+	font-family:Raleway,Arial,Helvetica,sans-serif;
+	margin: 0px;
+    letter-spacing: 2px;
+    color: #222;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  text-decoration: none;
+}
+p.lead {
+    font-weight: 300;
+    margin-bottom: 30px;
+}
+
+/*==========================================*/
+/*       02 - Navigation bar
+/*==========================================*/
+.navbar {
+    background: rgba(0, 0, 0, 0.35);
+    border: none;
+    border-radius: 0px;
+    box-shadow: none;
+    margin: 0px;
+    z-index: 99999;
+}
+.navbar-brand {
+    padding-top: 55px;
+    color:#ffffff!important;
+}
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.open>a,
+.navbar-default .navbar-nav>.active>a:hover,
+.navbar-default .navbar-nav>.open>a:hover {
+    background: transparent;
+    box-shadow: none;
+    color: #ffffff;
+}
+.navbar-default .navbar-nav>li:hover>a{
+    color: #55a32a !important;
+}
+
+.navbar-default .navbar-nav>.active>a,
+.navbar-default .navbar-nav>.active>a:focus,
+.navbar-default .navbar-nav>.active>a:hover {
+    background: transparent;
+}
+.signin-section button{
+    float: right;
+    padding-top:10px;
+}
+.navbar-nav>li>a {
+    box-shadow: none;
+    color: #ffffff !important;
+    font-size: 16px;
+    font-weight: 400;
+    padding: 15px 0px 25px 60px;
+}
+.bg-change {
+    background: #222;
+}
+.bg-change .navbar-brand {
+    padding-top: 8px;
+
+}
+.navbar-brand{
+    font-size: 30px;
+    color: #fff;
+}
+.bg-change .navbar-nav>li>a {
+    padding: 15px 0 25px 60px;
+}
+
+.bg-change .navbar-brand img{
+    height: 50px;
+    width: 120px;
+}
+/*==========================================*/
+/*       02 - Top Header
+/*==========================================*/
+.top-header{
+    /*padding: 5px 0;*/
+}
+.top-header a#logo{
+    width: 250px;
+    height: 50px;
+    background:url(../img/logo.png) no-repeat;
+    display: block;
+}
+.top-header .lj{
+    padding: 12px 0;
+    font-size: 18px;
+    color:#000; 
+}
+.btn-top{
+  border-color: transparent;
+  background-color: transparent;
+  color: #ffffff!important;
+  font-size: 15px!important;
+  padding: 10px!important;
+  border-width: 0px;
+}
+.btn-top:hover,.btn-top:focus,.btn-top:active{
+  border-color: transparent;
+  background-color: transparent;
+  color: #ffffff!important;
+}
+.btn-login{
+  padding: 10px 20px!important;
+}
+/*==========================================*/
+/*       03 - Banner
+/*==========================================*/
+.banner{
+    margin-bottom: 20px;
+    width: 100%;
+    text-align: center;
+}
+
+.banner{
+    background: url(../img/slide2.jpg) no-repeat center fixed;
+    background-size: cover;
+}
+.section-pattern {
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.banner .section-padding {
+    padding: 240px 0 180px 0;
+}
+.banner .section-title {
+    font-weight: 400;
+}
+.banner .section-details {
+    padding-top: 30px;
+}
+
+.boxes{
+    margin-top: 0px;
+}
+.section-padding {
+    padding: 30px 0px;
+}
+.section-title {
+    font-weight: 600;
+    padding-bottom: 12px;
+    text-transform: capitalize;
+    
+}
+.banner .section-title{
+    color: #fff;
+}
+
+.section-title span {
+    color: #ffffff;
+}
+.section-description {
+    font-size: 1em;
+    font-weight: 300;
+    padding: 0px 15%;
+    color: #fff !important;
+}
+.section-details {
+    display: inline-block;
+    padding-top: 30px;
+}
+.search-section .section-description {
+    color: #ffffff;
+    padding: 0px 20%;
+}
+.search-hide {
+    padding-top: 30px;
+    position: relative;
+}
+.search input {
+    border: 2px solid #ffffff;
+    background: transparent;
+    border-radius: 0px;
+    color: #fff;
+    display: inline-block;
+    height: 48px;
+    max-width: 450px!important;
+    padding: 15px;
+    margin-left: 50px;
+}
+@media(min-width: 968px){
+    .search .search-text {
+        width: 450px!important;
+    }
+}
+.search input:focus {
+    border: 2px solid #ffffff;
+    outline: 0;
+}
+.search button:focus {
+    border: none;
+    outline: 0;
+}
+.btn-search{
+  color: #ffffff!important;
+}
+#search-submit {
+    border: 2px solid #ffffff;
+    color: #000;
+    display: inline-block;
+    padding: 14px 10px;
+    margin-top: -3px;
+    margin-left: -5px;
+}
+
+.btn.focus, .btn:focus, .btn:hover {
+    color: #333;
+    text-decoration: none;
+}
+.btn {
+    background: transparent;
+    border-radius: 0px;
+    color: #a7a7a8;
+    font-size: .8125em;
+    padding: 8px 20px;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+    transition: all .3s ease-in-out;
+}
+
+/*------------------------------------Box Container---------------------------------------------*/
+.box_container a {
+    background: url(../img/mountains_3.png) left bottom repeat-x #fff;
+    padding: 25px;
+    -moz-box-shadow: 0 0 5px rgba(000, 000, 000, .4);
+    -webkit-box-shadow: 0 0 5px rgba(000, 000, 000, .4);
+    box-shadow: 0 0 5px rgba(000, 000, 000, .4);
+    margin-bottom: 10px;
+    display: block;
+    color: #333;
+    position: relative;
+}
+.box_container a i {
+    font-size: 42px;
+    color: #282e3f;
+    width: 42px;
+    height: 42px;
+    float: right;
+    margin: 0 10px 15px 20px;
+}
+.box_container a:hover {
+    background-color: #f2f1e6;
+}
+
+/*------------------------------------Box Container---------------------------------------------*/
+.popular-ts a{
+	color: #282e3f;
+    text-decoration: none;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease;
+}
+.aaaa{
+    padding: 0 45px;
+    margin: 30px 0;
+}
+.popular-ts-list{
+        box-shadow: 0 0 5px rgba(000, 000, 000, .4);
+        padding: 0;
+        border:2px solid 0 0 5px rgba(0, 0, 0, .9);
+        border-radius: 15px;
+}
+.popular-ts-list:hover{
+    background-color: #f2f1e6;
+    box-shadow: 0 0 10px rgba(000, 000, 000, .4);
+
+}
+.popular-ts-image-container img{
+    width: 100%;
+    max-height: 170px;
+    border-radius: 10px 10px 0px 0px;
+}
+.category-listing-title{
+    padding: 10px 20px;
+    color: #ffffff;
+    background: rgba(0, 0, 0, .3);;
+    font-size: 18px;
+    font-weight: 600;
+    position: absolute;
+    top: 46%;
+}
+.category-listing-subtitle{
+    padding: 10px 20px;
+}
+.category-listing-subtitle .btn-ts{
+    padding:5px 10px; 
+    float:right;
+    border-radius: 5px;
+}
+
+.category-listing-subtitle .btn-ts:hover{
+    color: #ffffff;
+}
+
+
+.feature-box {
+    clear: both;
+    margin-bottom: 20px;
+}
+.feature-box .feature-box-icon {
+    border: 3px double #ededed;
+    border-radius: 45px;
+    border-color: rgba(40, 46, 63, 0.2);
+    color: #282e3f;
+    display: inline-block;
+    float: left;
+    height: 45px;
+    font-size: 20px;
+    line-height: 40px;
+    margin-right: 5px;
+    text-align: center;
+    width: 45px;
+}
+.feature-box .feature-box-info {
+    padding-left: 55px;
+}
+
+/*==========================================*/
+/*       03 - Map
+/*==========================================*/
+#map {
+    margin-top: 20px;
+    height: 300px;
+    width: 100%;
+}
+
+/* 17 --------- Scroll To Top ----------*/
+
+.scroll-to-top {
+    position: fixed;
+    right: 35px;
+    bottom: 35px;
+    font-size: 1.5em;
+    height: 40px;
+    width: 40px;
+    background-color: #282e3f;
+    color: #ffffff;
+    line-height: 40px;
+    color: #ffffff;
+    text-align: center;
+    opacity: .3;
+    cursor: pointer;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.scroll-to-top:hover {
+    opacity: 1;
+}
+
+
+/*==========================================*/
+/*       17 - Footer Elements
+/*==========================================*/
+.footer {
+  text-align: center;
+  padding-bottom: 40px;
+  overflow: hidden;
+  width: 100%;
+  background: #222;
+  border-top: 5px solid #222;
+  margin-top: 30px;
+}
+.footer .top-text {
+  display: inline-block;
+  top: 0px;
+  padding: 10px 20px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  border-bottom-left-radius: 5px;
+  -moz-border-bottom-left-radius: 5px;
+  -webkit-border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  -moz-border-bottom-right-radius: 5px;
+  -webkit-border-bottom-right-radius: 5px;
+    background: #222;
+}
+
+
+.footer .copyright h6 {
+  font-family: "Lato", helvetica, sans-serif;
+  font-size: 12px;
+  color: #aaa;
+  text-align: center;
+  margin-top: 20px;
+}
+.footer .links ul {
+  padding-left: 0px;
+  list-style: none;
+}
+.footer .links .social-icons {
+  font-size: 16px;
+  text-align: center;
+}
+.footer .links .social-icons .circle {
+  width: 35px;
+  height: 35px;
+  display: inline-block;
+  margin: 0px 7.5px;
+  color: #ffffff;
+  -webkit-transition: all 0.2s ease-in-out;
+  -moz-transition: all 0.2s ease-in-out;
+  -ms-transition: all 0.2s ease-in-out;
+  -o-transition: all 0.2s ease-in-out;
+  /*transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -o-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+*/  background: rgba(0, 0, 0, 0.2);
+}
+.footer .links .social-icons .circle .icon {
+  margin: 0 auto;
+  line-height: 35px;
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -o-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+}
+.footer .links .social-icons .circle:hover .icon {
+  color: #fff;
+}
+
+@media(max-height: 767px){
+    .footer .right ul {
+        margin: 0 auto;
+        display: inline-block;
+        padding: 0px;
+      }
+      .footer .right ul .social-icons {
+        float: none;
+        margin-top: 10px;
+      }
+      .footer .right ul .social-icons .circle {
+        margin-left: 5px;
+        margin-right: 5px;
+      }
+}
+
+@media(max-width: 480px){
+      .footer .links .social-icons .circle {
+    width: 28px;
+    height: 28px;
+    margin: 0px 5px;
+  }
+  .footer .links .social-icons .circle .fa {
+    font-size: 12px;
+    line-height: 12px;
+  }
+}
+
+
+/*==========================================*/
+/*       Page Banner
+/*==========================================*/
+.page-banner{
+    background: url(../img/page-banner.jpg);
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: hidden;
+    background-size: auto 230px;
+    background-position: top center;
+    height: 230px;
+/*    position: absolute;
+    background-color: rgba(0, 0, 0, 0.9);*/
+}
+.page-banner .page-title{
+    position: relative;
+    top: 120px;
+}
+
+.page-banner .page-title h1{
+  color: #ffffff;
+  font-weight: 700;
+}
+.trekking-site .ts-title{
+    font-weight: 600;
+}
+.trekking-site .breadcrumb{
+    background-color: transparent;
+    margin-bottom: 0;
+    font-weight: 600;
+    font-size: 15px;
+    padding-left: 0;
+}
+.trekking-site .breadcrumb li{
+    font-weight: 400;
+    font-size: 14px; 
+}
+
+.map-shortcut, .review-shortcut{
+  pointer:cursor;
+  margin-bottom: 10px;
+}
+.map-shortcut .shortcut-title, .review-shortcut .shortcut-title{
+  background-color: rgba(0,0,0,0.5);
+  position: absolute; 
+  bottom: 0;
+  left: 20px;
+  padding: 5px 27px 0 15px;
+  text-align: center;
+}
+.ts-banner{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px 0 10px 0;
+    margin: 15px 0;
+}
+.ts-gallery img{
+  max-height: 335px;
+}
+
+/*==========================================*/
+/*       slick slider controller
+/*==========================================*/
+.slick-prev {
+    left: 0px;
+    z-index: 100;
+}
+.slick-next {
+    right: 20px;
+}
+.slick-prev:before, .slick-next:before{
+  font-size: 30px;
+}
+.slick-dots{
+  bottom: -8px;
+}
+.slick-dotted.slick-slider{
+  margin-bottom: 0px;
+}
+
+/*==========================================*/
+/*       quick booking
+/*==========================================*/
+.quick-booking{
+  height: 330px;
+  background-color: #ffffff;
+  padding: 10px 0;
+  border: 1px solid #e9e8e2;
+  box-shadow: 1px 1px 16px rgba(0,0,0,0.4);
+}
+
+
+.panel .panel-title{
+  margin-bottom: 7px;
+}
+.panel .panel-title-content{
+  text-align: justify;
+}
+.panel .panel-body{
+  padding-top: 0;
+}
+.panel-heading,.panel-body{
+  padding: 0;
+}
+
+.tab-content{
+  padding: 10px 0px;
+}
+.tab-pane p{
+  text-align: justify;
+}
+
+      #map-canvas {
+          height: 100%;
+          width: 500px;
+      }
+
+#loginbox .form-control{
+  height: 40px;
+}
+#loginbox .btn-login{
+  margin-top: 10px;
+  background: #282e3f;
+  color:#ffffff;
+}
+
+.signin-section ul{
+  float: right; 
+  margin-top: 20px; 
+  color: #ffffff;
+}
+.signin-section ul li{
+  float: left;
+  text-decoration-style: none;
+  list-style: none;
+  margin-left: 20px;
+}
+.signin-section ul li a{
+  color:#ffffff!important;
+}
+.trip-data{
+  padding-top: 5px;
+}
+.form-booking{
+  padding: 0 20px;
+}
+.btn-booking{
+  margin-left: 40%;
+}
+.ts-banner .table-responsive td{
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
